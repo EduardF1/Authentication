@@ -11,10 +11,11 @@ should have (common user - client vs premium user tiers - more available service
 - Is related not to setting up authentication itself but rather the different layers/levels of security that the platform can have.
 
 - Website structure:
-
+```
               |-----> Register ---
 Home page --> |                  |-----> Secrets
               |-----> Log In -----   
+```
 
 # Level 1 security (Username and password only, plain text account data storage)
 - Email & Password authentication (account creation and validation). This is done using a Database of users.
