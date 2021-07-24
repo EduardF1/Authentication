@@ -103,4 +103,19 @@ Day 2: BROWSER (Client) ---GET (browse Amazon.co and send cookie)----------->  S
 - Periods of time during which a browser interacts with a server. At the moment of logging in to a website, the session starts and that is also
 when the session cookie gets created. The session cookie will contain data that specifies that the user is authenticated and in a valid session.
   The cookie is then destroyed at the moment of logging out from the web platform.
-- Implementation: using Passport.JS. Run `npm i passport passport-local passport-local-mongoose express-session`.  
+- Implementation: using Passport.JS. Run `npm i passport passport-local passport-local-mongoose express-session`.
+
+# Third Party OAuth2.0
+- OAuth = Open Authorisation. 
+- Delegate the authentication process to a more resourceful company (ex.: FB/G.).
+- Why OAuth ? 
+1)  Allow granular level of access. 
+2)  Read/Write access.
+3)  Revoke Access.
+
+- How it works ?
+1)  Set up the web app in the 3rd party's dev. console and then use the provided app it (token).
+2)  Redirect to Authenticate via the 3rd party platform.
+3)  User logs in
+4)  User grants permissions to the 3rd party authenticator.
+5)  Receive Authorisation code or exchange the code for an access token. (Auth code = 1 time access ticket/ access token = year pass).
